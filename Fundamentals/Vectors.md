@@ -1,4 +1,3 @@
-https://www.wolftech.ncsu.edu/gradwatch/students/login.php?logout=1https://www.wolftech.ncsu.edu/gradwatch/students/login.php?logout=1https:/https://www.wolftech.ncsu.edu/gradwatch/students/login.php?logout=1/www.wolftech.ncsu.edu/gradwatch/students/login.php?logout=1
 
 Two fundamental objects are Points and Vectors.
 
