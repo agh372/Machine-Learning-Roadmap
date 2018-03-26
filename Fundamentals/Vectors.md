@@ -1,5 +1,5 @@
 
-###Points 
+### Points 
 
 Point is a location. It is represented as a "dot".In a coordinate system, we can represent points by coordinates in its system.
 
@@ -110,9 +110,9 @@ Flat objects such as lines and planes are defined by linear equations:
     Can add and subtract vars and constants
     Can multiply a var by a constant
 
-$$ x + 2y = 1 // y/2 - 2z = x => $$Linear equations
+   x + 2y = 1 // y/2 - 2z = x => $$Linear equations
 
-$$ x**2 - 1 = y // y/x = 3 => $$ Non linear equations
+   x**2 - 1 = y // y/x = 3 => $$ Non linear equations
 
 Finding intersections is solving systems of equations. We are basicaly converting a real world problems (linear equations) into a geometrical problem (n dimensional objects).
 Lines and systems with 2 dimensional objects
@@ -192,9 +192,9 @@ if A = 0 => swap A by C, B by D and k1 by k2 => A will never be 0
 
 (AD - BC) is never 0 b/c that would mean that both lines are parallel
 
-$$ y = (-Ck1 + Ak2) / (AD - BC) $$
+   y = (-Ck1 + Ak2) / (AD - BC) 
 
-$$ x = (Dk1 - Bk2) / (AD - BC) $$
+   x = (Dk1 - Bk2) / (AD - BC) 
 
 If there are no intersections in a system => the system is "Inconsistent"
 Planes and systems with 3 dimensional objects
@@ -251,15 +251,15 @@ Then we have to make the coefficient of pivot variable to be 1
 
 Then we clear the pivot variable of the second equation in the first equation leaving the system:
 
-$$ x + Az = B $$
+   x + Az = B 
 
-$$ y + Cz = D $$
+   y + Cz = D 
 
 The leading variables have coefficient one and they only appear on one equation each. The system is simplified as much as possible giving us the "reduced row-echelon form" or rref.
 
 With the rref we are able to get a basepoint and a direction vector that define the parametrization of the soluton for the system.
 
-$$[x y z] = [(B - AZ) (D - Cz) z ]=> [B D 0] + z* [-A -C 1]$$
+  [x y z] = [(B - AZ) (D - Cz) z ]=> [B D 0] + z* [-A -C 1]
 
 ### Base point [B D 0]
 
