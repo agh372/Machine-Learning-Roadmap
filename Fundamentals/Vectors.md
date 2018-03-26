@@ -8,7 +8,7 @@ In 2d space, the standard coordinate system is Cartesian coordinate system.
 A Cartesian coordinate system is a coordinate system that specifies each point uniquely in a plane by a pair of numerical coordinates
 
 
-###Vectors
+### Vectors
 
 It represents change in position.In Euclidean space, it can be viewed as arrow connecting two points.
 Properties
@@ -32,7 +32,7 @@ The process of finding a unit vector from a given vector is called normalization
 
 
 
-###Scalar multiplication
+### Scalar multiplication
 
 Scalar multiplication is represented in the same manners as algebraic multiplication. A scalar beside a vector (either or both of which may be in parentheses) implies scalar multiplication. The common operator, a dot , which operate on two vectors. The product of a scalar c with a vector v can be represented in any of the following fashions:
 
@@ -45,7 +45,7 @@ Vector addition can be calculated by placing the initial points of the vectors t
 
 vector subtraction can be calculated by placing the arrow which connects two arrow heads.
 
-###Parallel and orthogonal vectors
+### Parallel and orthogonal vectors
 
 2 vectors are parallel if one is a scalar multiple of another one. e.g: v and 2v and 1/2v and Zero vector
 
@@ -110,9 +110,9 @@ Flat objects such as lines and planes are defined by linear equations:
     Can add and subtract vars and constants
     Can multiply a var by a constant
 
-$$x + 2y = 1 // y/2 - 2z = x => $$Linear equations
+$$ x + 2y = 1 // y/2 - 2z = x => $$Linear equations
 
-$$x**2 - 1 = y // y/x = 3 =>$$ Non linear equations
+$$ x**2 - 1 = y // y/x = 3 => $$ Non linear equations
 
 Finding intersections is solving systems of equations. We are basicaly converting a real world problems (linear equations) into a geometrical problem (n dimensional objects).
 Lines and systems with 2 dimensional objects
@@ -131,11 +131,11 @@ A given line has infinetely many base points (basically each of its points).
 
 A given line has infinetely many directions (we can multiply the direction vector by any postive scalar and it will give the same direction)
 
-$$x(t) = [1, -2] + t*[3, 1]$$
+$$ x(t) = [1, -2] + t*[3, 1] $$
 
-$$for t = 0 => x = [1, -2] => Base point$$
+$$ for t = 0 => x = [1, -2] => Base point $$
 
-$$for t = 1 => x = [1, -2] + [3, 1] = [3, -1] => Another point on the line$$
+$$ for t = 1 => x = [1, -2] + [3, 1] = [3, -1] => Another point on the line $$
 
 A generic way of representing a line: Ax + By = k (A, B not both 0)
 
@@ -192,9 +192,9 @@ if A = 0 => swap A by C, B by D and k1 by k2 => A will never be 0
 
 (AD - BC) is never 0 b/c that would mean that both lines are parallel
 
-$$y = (-Ck1 + Ak2) / (AD - BC)$$
+$$ y = (-Ck1 + Ak2) / (AD - BC) $$
 
-$$x = (Dk1 - Bk2) / (AD - BC)$$
+$$ x = (Dk1 - Bk2) / (AD - BC) $$
 
 If there are no intersections in a system => the system is "Inconsistent"
 Planes and systems with 3 dimensional objects
@@ -230,7 +230,7 @@ In order to solve a system wtih 3 linear equations and 3 variables we need a set
     Multiply each of the sides of the planes that is not 0
     Add a multiple of one equation to another equation
 
-###Gaussanian elimination:
+### Gaussanian elimination:
 
     Clear a variable in successive equations until there is only one equation with one variable.
     At that point 3 eq with 3 variables have been converted to a system of 3 equations, one with 3 variables, one with 2 variables and another one with one variable (triangular form)
@@ -251,9 +251,9 @@ Then we have to make the coefficient of pivot variable to be 1
 
 Then we clear the pivot variable of the second equation in the first equation leaving the system:
 
-x + Az = B
+$$ x + Az = B $$
 
-y + Cz = D
+$$ y + Cz = D $$
 
 The leading variables have coefficient one and they only appear on one equation each. The system is simplified as much as possible giving us the "reduced row-echelon form" or rref.
 
@@ -261,9 +261,9 @@ With the rref we are able to get a basepoint and a direction vector that define 
 
 $$[x y z] = [(B - AZ) (D - Cz) z ]=> [B D 0] + z* [-A -C 1]$$
 
-###Base point [B D 0]
+### Base point [B D 0]
 
-###Direction vector [-A -C 1]
+### Direction vector [-A -C 1]
 
 In order for a system to intersect in only one point it needs at least 3 equations, 3 planes.
 
