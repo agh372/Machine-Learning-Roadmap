@@ -1,3 +1,4 @@
+Notes from Udacity Linear algebra refresher course 
 
 ### Points 
 
@@ -61,42 +62,45 @@ Proyecting a vector into another vector
 
 Proyecting a vector into another vector:
 
-v1 = v1-parallel (to base vector) + v1-orthogonal (to base vector)
+     v1 = v1-parallel (to base vector) + v1-orthogonal (to base vector)
 
 v1-parallel is a cathetus, v2-orthogonal is the other cathetus and v1 is the hipotenuse.
 
-(*) cos angle = magnitude(v1-parallel) / magnitude(v1) =>
+    (*) cos angle = magnitude(v1-parallel) / magnitude(v1) =>
 
-magnitude(v1-parallel) = cos angle * magnitude(v1).
+    magnitude(v1-parallel) = cos angle * magnitude(v1).
 
 Being v2 the base vector:
 
-(v1 * v2) / (magnitude(v1) * magnitude(v2)) = cos(v1-v2).
+    (v1 * v2) / (magnitude(v1) * magnitude(v2)) = cos(v1-v2).
 
 Substituting cos from (*):
 
-magnitude(v1-parallel) = magnitude(v1) * (v1 * v2) / (magnitude(v1) * magnitude(v2)) =>
+    magnitude(v1-parallel) = magnitude(v1) * (v1 * v2) / (magnitude(v1) * magnitude(v2)) =>
 
 (eliminating magnitude(v1) in right equation) =>
 
-magnitude(v1-parallel) = (v1 * v2) / magnitude(v2)) =>
+    magnitude(v1-parallel) = (v1 * v2) / magnitude(v2)) =>
 
-magnitude(v1-parallel) = v1 * normalize(v2)
+    magnitude(v1-parallel) = v1 * normalize(v2)
 
 v1 parallel has the same direction as v2.
 
-magnitude(v1-parallel) * normalize(v2) = v1-parallel =>
+    magnitude(v1-parallel) * normalize(v2) = v1-parallel =>
 
-(v1 * normalize(v2)) * normalize(v2) = v1-parallel
-Cross product
+    (v1 * normalize(v2)) * normalize(v2) = v1-parallel
+    
+### Cross product
 
 Cross product: It's only possible in 3-dimension vectors and it gives another vector.
 
-Cross product of v and w is a vector that is orthogonal to both and its magintute = magnitude(v) * magnitude(w) * sin(angle v-w).
+Cross product of v and w is a vector that is orthogonal to both and its
+
+     magintute = magnitude(v) * magnitude(w) * sin(angle v-w).
 
 Cross product of 2 parallel vectors is the 0 vector. If v or w are the 0 vector the cross product will be the 0 vector. Cross product is anticommutative, which means that the order matters, in this case changing the order results on vectors having opposite directions.
 
-cross product(v, w) = - cross product(v, w)
+     cross product(v, w) = - cross product(v, w)
 
 The area of the parallelogram created with v and w is the magnitude of the cross product of v and w.
 
@@ -110,9 +114,9 @@ Flat objects such as lines and planes are defined by linear equations:
     Can add and subtract vars and constants
     Can multiply a var by a constant
 
-   x + 2y = 1 // y/2 - 2z = x => $$Linear equations
+     x + 2y = 1 // y/2 - 2z = x => Linear equations
 
-   x**2 - 1 = y // y/x = 3 => $$ Non linear equations
+     x**2 - 1 = y // y/x = 3 =>  Non linear equations
 
 Finding intersections is solving systems of equations. We are basicaly converting a real world problems (linear equations) into a geometrical problem (n dimensional objects).
 Lines and systems with 2 dimensional objects
@@ -121,7 +125,7 @@ The most basic problem is finding intersection between lines.
 
 A line is defined with its basepoint (x0) and the direction of the vector(v).
 
-x(t) = x0 + times_scalar(v, t) => x(t) = x0 + t * v (parametrization of line)
+     x(t) = x0 + times_scalar(v, t) => x(t) = x0 + t * v (parametrization of line)
 
 Parametrization of a line (dimensional object) is the act of conveting a system of equations into a set of one dimension equations that all take the same parameters in this case "t" (parameter).
 
@@ -131,17 +135,17 @@ A given line has infinetely many base points (basically each of its points).
 
 A given line has infinetely many directions (we can multiply the direction vector by any postive scalar and it will give the same direction)
 
-$$ x(t) = [1, -2] + t*[3, 1] $$
+     x(t) = [1, -2] + t*[3, 1] 
 
-$$ for t = 0 => x = [1, -2] => Base point $$
+     for t = 0 => x = [1, -2] => Base point 
 
-$$ for t = 1 => x = [1, -2] + [3, 1] = [3, -1] => Another point on the line $$
+    for t = 1 => x = [1, -2] + [3, 1] = [3, -1] => Another point on the line 
 
 A generic way of representing a line: Ax + By = k (A, B not both 0)
 
 k => constant term
 
-Base point => (0, k/B) and (k/A, 0)
+    Base point => (0, k/B) and (k/A, 0)
 
 if k = 0 =>
 
@@ -192,9 +196,9 @@ if A = 0 => swap A by C, B by D and k1 by k2 => A will never be 0
 
 (AD - BC) is never 0 b/c that would mean that both lines are parallel
 
-   y = (-Ck1 + Ak2) / (AD - BC) 
+     y = (-Ck1 + Ak2) / (AD - BC) 
 
-   x = (Dk1 - Bk2) / (AD - BC) 
+     x = (Dk1 - Bk2) / (AD - BC) 
 
 If there are no intersections in a system => the system is "Inconsistent"
 Planes and systems with 3 dimensional objects
@@ -251,15 +255,15 @@ Then we have to make the coefficient of pivot variable to be 1
 
 Then we clear the pivot variable of the second equation in the first equation leaving the system:
 
-   x + Az = B 
+     x + Az = B 
 
-   y + Cz = D 
+     y + Cz = D 
 
 The leading variables have coefficient one and they only appear on one equation each. The system is simplified as much as possible giving us the "reduced row-echelon form" or rref.
 
 With the rref we are able to get a basepoint and a direction vector that define the parametrization of the soluton for the system.
 
-  [x y z] = [(B - AZ) (D - Cz) z ]=> [B D 0] + z* [-A -C 1]
+    [x y z] = [(B - AZ) (D - Cz) z ]=> [B D 0] + z* [-A -C 1]
 
 ### Base point [B D 0]
 
