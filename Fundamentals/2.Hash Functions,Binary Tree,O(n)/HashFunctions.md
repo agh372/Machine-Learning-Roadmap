@@ -20,6 +20,7 @@ Hash functions are not cryptographic protocol, they do not encrypt or decrypt in
 ### Some of the most used hash functions are:
 
  1)MD5: Message digest algorithm producing a 128 bit hash value. This is widely used to check data integrity. It is not suitable for use in other fields due to the security vulnerabilities of MD5.
+ 
  2)SHA: Group of algorithms designed by the U.S's NSA that are part of the U.S Federal Information processing standard. These algorithms are used widely in several cryptographic applications. The message length ranges from 160 bits to 512 bits.
 
 The hashlib module, included in The Python Standard library is a module containing an interface to the most popular hashing algorithms. hashlib implements some of the algorithms, however if you have OpenSSL installed, hashlib is able to use this algorithms as well.
